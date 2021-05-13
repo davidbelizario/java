@@ -1,4 +1,4 @@
-package aula_while;
+package aula;
 
 public class RaizQuadradaNaoExata {
 	public int num;
