@@ -1,4 +1,4 @@
-package aula_while;
+package aula;
 
 import java.awt.EventQueue;
 
