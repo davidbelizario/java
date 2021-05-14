@@ -4,15 +4,15 @@ public class Conta {
 	String nome, cpf;
 	int agencia, contaa;
 	static double saldo, limite;
-	double valor_movimentado;
+	
 
 
 	Conta(){
 		System.out.println("---- Dados e Saldos Iniciais ----");
-		nome = "Ronaldo Arruda";
-		cpf = "123.456.789-00";
-		agencia = 3572;
-		contaa = 100253;
+		this.nome = "Ronaldo Arruda";
+		this.cpf = "123.456.789-00";
+		this.agencia = 3572;
+		this.contaa = 100253;
 		Conta.saldo = 500;
 		Conta.limite = 1000;
 		System.out.println("Nome = " + nome);
@@ -31,7 +31,7 @@ public class Conta {
 		if(valor_movimentado > (saldo + limite)) {
 			System.out.println("Saldo Conta Atualizado:" + saldo);
 			System.out.println("Saldo do limite:" + Conta.limite);
-			System.out.println("Saque Inv·lido");
+			System.out.println("Saque Inv√°lido");
 		} 
 		else{
 			saldo = saldo + valor_movimentado;
